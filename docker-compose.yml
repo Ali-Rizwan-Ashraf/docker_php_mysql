@@ -9,7 +9,7 @@ services:
           - .:/application
         restart: always
         environment:
-          - MYSQL_ROOT_PASSWORD=.sweetpwd.
+          - MYSQL_ROOT_PASSWORD=pwd
           - MYSQL_DATABASE=my_db
           - MYSQL_USER=db_user
           - MYSQL_PASSWORD=.mypwd
