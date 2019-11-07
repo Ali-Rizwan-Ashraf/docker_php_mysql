@@ -3,7 +3,6 @@ services:
   mysql:
         image: mysql:8.0
         container_name: mysql-server-80
-        image: 6162/docker_mysql
         command: --default-authentication-plugin=mysql_native_password
         working_dir: /application
         volumes:
