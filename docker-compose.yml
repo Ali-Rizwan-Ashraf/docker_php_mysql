@@ -15,6 +15,7 @@ services:
           - MYSQL_PASSWORD=.mypwd
         ports:
           - "8082:3306"
+        tty: true
   website:
     image: 6162/docker_php
     container_name: php72
@@ -26,5 +27,6 @@ services:
       - ./src:/var/www/html
     ports:
       - 8000:80
+    tty: true
     depends_on:
       - mysql
