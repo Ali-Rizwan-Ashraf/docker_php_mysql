@@ -1,4 +1,5 @@
-#FROM mysql:8.0
+FROM mysql:8.0
+ADD data.sql /docker-entrypoint-initdb.d
 #WORKDIR /application
 #VOLUME .:/application
 #
